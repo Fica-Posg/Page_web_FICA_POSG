@@ -1,0 +1,186 @@
+@font-face {
+  font-family: 'Gravity';
+  src: url('@/assets/fonts/Gravity-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.curso-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  color: rgb(0, 0, 0); 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gravity', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.curso-image {
+  width: 50%;
+  height: 50%;
+  border-radius: 3%;
+  object-fit: cover;
+}
+
+.description-section {
+  flex: 1;
+  margin-right: 30px;
+  font-family: 'Gravity', sans-serif;
+
+
+}
+
+.title-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Gravity', sans-serif;
+}
+
+.info-box {
+  display: inline-block;
+  background-color:  #084771;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 55%;
+  font-family: 'Gravity', sans-serif;
+}
+
+.info-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'Gravity', sans-serif;
+}
+
+ul ul {
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 5px 0px;
+  font-family: 'Gravity', sans-serif;
+}
+
+.contenido-curso-container {
+  position: relative;
+  padding-bottom: 40px; 
+}
+
+.more-info-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #0076bd;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Gravity', sans-serif;
+}
+
+.more-info-button:hover {
+  background-color: #3f90ce;
+}
+
+.inscripcion-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inscripcion-button {
+  background-color: #084771;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Gravity', sans-serif;
+}
+
+.inscripcion-button:hover {
+  background-color: #0076bd;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.pdf-button {
+  width: 60px; 
+  height: auto; 
+  cursor: pointer; 
+  border: none; 
+  background: none; 
+  display: inline-block; 
+}
+
+.pdf-button:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.contenido-curso-container {
+  position: relative;
+  padding-bottom: 5px; 
+}
+
+@font-face {
+  font-family: 'Gravity';
+  src: url('@/assets/fonts/Gravity-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.gravity-font {
+  font-family: 'Gravity', sans-serif;
+}
+p {
+  font-size: 16px;
+  font-family: 'Gravity', sans-serif;
+}
+.p-accordion-header-text{
+  font-family: 'Gravity', sans-serif;
+
+}
+::v-deep(.p-accordion-header) {
+  font-family: 'Gravity', sans-serif !important;
+  font-size: 1rem;
+  font-weight: bold;
+}

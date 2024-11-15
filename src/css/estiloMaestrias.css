@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Gravity';
+  src: url('@/assets/fonts/Gravity-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Gravity', sans-serif;
+}
+
+.maestria-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  color: rgb(0, 0, 0); 
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.curso-image {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+.title-section {
+  margin-left: 0;
+  margin-top: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra los elementos horizontalmente */
+  background-color: #084771;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Asegura que ocupe el 100% del contenedor */
+  max-width: 400px; /* Limita el ancho máximo en pantallas grandes */
+}
+
+.info-item {
+  width: 100%; /* Ocupa el ancho completo de info-box */
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: center; /* Centra el contenido dentro de cada item */
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul ul {
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 5px 0;
+}
+
+.contenido-curso-container {
+  position: relative;
+  padding-bottom: 5px; 
+}
+
+.more-info-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: #0076BD;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.more-info-button:hover {
+  background-color: #0056b3;
+}
+
+.inscripcion-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.inscripcion-button {
+  background-color: #084771;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: 'Gravity', sans-serif;
+}
+
+.inscripcion-button:hover {
+  background-color: #0076BD;
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.pdf-button {
+  width: 60px; 
+  height: auto; 
+  cursor: pointer; 
+  border: none; 
+  background: none; 
+  display: inline-block; 
+}
+
+.pdf-button:hover {
+  transform: scale(1.05); 
+  transition: transform 0.3s ease; 
+}
+
+.description-section p {
+  text-align: justify;
+}
+
+/* Media Query para pantallas medianas */
+@media (min-width: 800px) {
+  .header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .curso-image {
+    width: 50%;
+    max-width: none;
+  }
+
+  .title-section {
+    margin-left: 30px;
+    text-align: left;
+  }
+
+  .info-box {
+    width: 55%;
+  }
+}
+
+/* Media Query para pantallas grandes */
+@media (min-width: 992px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .info-box {
+    width: 40%;
+  }
+
+  .title-section h1 {
+    font-size: 28px;
+  }
+
+  .contenido-curso-container {
+    padding-bottom: 40px; 
+  }
+}
