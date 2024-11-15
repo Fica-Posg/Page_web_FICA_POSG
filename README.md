@@ -26,3 +26,4 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Agregar o quitar una Maestria o Curso
 ```
 ver los comentarios agregados en cada parte del codigo pertinente a mostrar un apartado q direccione a ese cambio"# Page_web_FICA_POSG" 
+prueba git
