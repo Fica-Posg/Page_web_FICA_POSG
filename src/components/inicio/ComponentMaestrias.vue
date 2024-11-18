@@ -137,7 +137,6 @@ export default {
 
 .maestria-image {
   width: 100%;
-  height: 180px;
   border-radius: 8px;
   object-fit: cover;
   margin-bottom: 10px;

@@ -7,6 +7,12 @@ import maestria3Main from "@/assets/maestrias2/maestria3.jpg";
 import maestria4 from '@/assets/maestrias/maestria4.png';
 import maestria4Main from "@/assets/maestrias2/maestria4.jpg";
 
+import sismica2 from "@/assets/maestrias2/sismica1.jpeg";
+/*
+  las img de la page Main(imgMain) q van a componenteMaestrias.vue
+  deben ser 16:9 
+*/
+
 export const maestriasdb = [
     {
         //lista
@@ -24,11 +30,8 @@ export const maestriasdb = [
         area: "Civil",
         description: "Ingeniería Civil",
 
-        //Componente Paguinas
-
 
       },
-//cambiar titulo a dado de baja
       {
         //lista
         id: 2, 
@@ -61,7 +64,6 @@ export const maestriasdb = [
         description: "Ingenieria Civil",
         area: "Civil",   
       },
-//------------
       {
         //lista
         id: 4,
@@ -79,21 +81,19 @@ export const maestriasdb = [
         description: "Ingeniería en Sistemas",
 
       },
-      {
-        //lista
-        id: 99,
-        image: maestria4, 
-        title: 'aaaaaMaestría en Sistemas de Información', 
-        duration: '2 semestres', 
-        mode: 'Presencial', 
-        price: '$4120', 
-        url: '/maestria-sistemas',
 
+
+
+      
+      /*
+      {
         //main filtrado
-        titleMain: "aaaMaestría en Sistemas de Información, mención en Inteligencia de Negocios (2da cohorte)", 
-        imgMain: maestria4Main,
+        titleMain: "Maestría en Sistemas de Información, mención en Inteligencia de Negocios (1ra cohorte) (FINALIZADA)",
+        imgMain: sismica2,
         area: "Sistemas",
         description: "Ingeniería en Sistemas",
+        url: '',
       },
+      */
 
 ];

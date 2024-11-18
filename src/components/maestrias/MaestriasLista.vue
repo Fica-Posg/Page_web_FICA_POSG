@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="items-list">
-      <div class="item-card" v-for="maestria in filteredMaestrias" :key="maestria.id">
+      <div class="item-card" v-for="maestria in filteredMaestrias" :key="maestria.id" >
         <router-link :to="maestria.url" class="item-link" @click="scrollToTop">
           <img :src="maestria.image" alt="Imagen de la maestría" class="item-image">
           <h3>{{ maestria.title }}</h3>
@@ -106,12 +106,13 @@ export default {
   computed: {
     filteredMaestrias() {
       return this.maestrias.filter(maestria => {
+        const hasTitle = maestria.title && maestria.title.trim() !== '';
         const matchesDuration = this.filters.duration ? maestria.duration === this.filters.duration : true;
         const matchesCost = this.filters.cost ? this.checkPrice(maestria.price, this.filters.cost) : true;
         const matchesMode = this.filters.mode ? maestria.mode === this.filters.mode : true;
         const matchesArea = this.filters.area ? maestria.title.includes(this.filters.area) : true;
 
-        return matchesDuration && matchesCost && matchesMode && matchesArea;
+        return hasTitle && matchesDuration && matchesCost && matchesMode && matchesArea;
       });
     }
   },

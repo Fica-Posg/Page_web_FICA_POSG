@@ -1,7 +1,7 @@
 <template>
   <div class="maestria-page">
     <div class="header">
-      <img src="@/assets/maestrias/maestria4.png" alt="Maestría en Sistemas" class="curso-image2" />
+      <img src="@/assets/maestrias/maestria4.png" alt="Maestría en Sistemas" class="curso-image" />
       <div class="title-section">
         <h1>Maestría en Sistemas de Información, mención en Inteligencia de Negocios (2da cohorte)</h1>
           <div class="description-section">
