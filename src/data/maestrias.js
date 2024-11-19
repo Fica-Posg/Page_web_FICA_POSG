@@ -7,7 +7,13 @@ import maestria3Main from "@/assets/maestrias2/maestria3.jpg";
 import maestria4 from '@/assets/maestrias/maestria4.png';
 import maestria4Main from "@/assets/maestrias2/maestria4.jpg";
 
-import sismica2 from "@/assets/maestrias2/sismica1.jpeg";
+import sismica1 from "@/assets/maestrias2/sismica1.png";
+import rehabilitacion from "@/assets/maestrias2/rehabilitacion.png";
+import sostenible from "@/assets/maestrias2/sostenible.png";
+import ecoeficiencia from "@/assets/maestrias2/ecoeficiencia.png";
+import logistica from "@/assets/maestrias2/logistica_sum.png";
+
+
 /*
   las img de la page Main(imgMain) q van a componenteMaestrias.vue
   deben ser 16:9 
@@ -84,16 +90,49 @@ export const maestriasdb = [
 
 
 
-      
-      /*
+      //Maestria en diferente estado (Main)
       {
         //main filtrado
-        titleMain: "Maestría en Sistemas de Información, mención en Inteligencia de Negocios (1ra cohorte) (FINALIZADA)",
-        imgMain: sismica2,
+        titleMain: "Maestría en Ingeniería Civil, mención en evaluación y rehabilitación de estructuras (FINALIZADA)",
+        imgMain: rehabilitacion,
+        area: "Civil", 
+        description: "Ingenieria Civil",
+        url: '',
+      },
+      {
+        //main filtrado
+        titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Estructural, Sísmica y de Cimentaciones (1ra cohorte) (FINALIZADA)",
+        imgMain: sismica1,
+        area: "Civil", 
+        description: "Ingenieria Civil",
+        url: '',
+      },
+      {
+        //main filtrado
+        titleMain: "Maestría en Sistemas Integrados, con mención en Sostenibilidad (En Ejecución)",
+        imgMain: sostenible,
+                //confirmar
         area: "Sistemas",
         description: "Ingeniería en Sistemas",
         url: '',
       },
-      */
+      {
+        //main filtrado
+        titleMain: "Maestría en Ecoeficiencia Industrial (En Ejecución)",
+        imgMain: ecoeficiencia,
+                //confirmar
+        area: "Otros",
+        description: "Ingenieria Civil",
+        url: '',
+      },
+      {
+        //main filtrado
+        titleMain: "Maestría en Ingeniería Industrial, con mención en logística y cadena de suministros (En Ejecución)",
+        imgMain: logistica,
+        //confirmar
+        area: "Otros",
+        description: "Ingenieria Industrial",
+        url: '',
+      },
 
 ];

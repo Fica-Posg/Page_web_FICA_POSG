@@ -2,12 +2,9 @@
     <div>
         <h1>PAGINA NO ENCONTRADA</h1>
         <h2>LA PAGINA QUE ESTAS BUSCANDO NO EXISTE</h2>
-
-        
         <p>Ingrese el link</p>
-        <p><a href="/#/cursos">/cursos</a></p>
-        <p><a href="/#/maestrias">/maestrias</a></p>
-        <span class="sms">Borrar en produccion</span>
+        <p><a href="/#/cursos">Cursos - Fica UCE</a></p>
+        <p><a href="/#/maestrias">Maestrias - Fica UCE</a></p>
         
     </div>
 </template>
