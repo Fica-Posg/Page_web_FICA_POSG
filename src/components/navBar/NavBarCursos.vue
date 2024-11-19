@@ -1,31 +1,20 @@
 <template>
   <div class="navbar">
     <div class="logo-container">
-      <img
-        :src="logo"
-        alt="Logo UCE"
-        class="logo"
-        @click.prevent="goToInicio"
-      />
+      <img :src="logo" alt="Logo UCE" class="logo" @click.prevent="goToInicio" />
       <div class="logo-with-tooltip">
-        <a @click.prevent="goToInicio">
-          <div class="texto-facu">
+          <div class="texto-facu" @click.prevent="goToInicio">
             <p>Facultad de Ingeniería y </p>
             <p>Ciencias Aplicadas</p>
           </div>
           <div class="texto-cp">
-            <strong><p>Consejo de Posgrado</p></strong>
+            <strong>
+              <p>Consejo de Posgrado</p>
+            </strong>
           </div>
-          
-        </a>
         <div class="tooltip">Centro de Educación Continua UCE</div>
       </div>
-      <img
-        :src="logocp"
-        alt="Logo UCE"
-        class="logocp"
-        @click.prevent="goToInicio"
-      />
+      <img :src="logocp" alt="Logo UCE" class="logocp" @click.prevent="goToInicio" />
     </div>
 
     <div class="menu-container">
@@ -123,6 +112,7 @@ export default {
   font-weight: normal;
   font-style: normal;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -142,6 +132,7 @@ export default {
   width: 80px;
   height: 80px;
 }
+
 .logocp {
   width: 78px;
   height: 78px;
@@ -232,16 +223,18 @@ export default {
     width: 200px;
   }
 }
-.logo-with-tooltip p{
-margin-top: 0%;
-margin-bottom: 1%;
+
+.logo-with-tooltip p {
+  margin-top: 0%;
+  margin-bottom: 1%;
 
 }
-.texto-facu{
-  color:  #0076BD;
+
+.texto-facu {
+  color: #0076BD;
 }
-.texto-cp{
+
+.texto-cp {
   color: #084771;
 }
-
 </style>
