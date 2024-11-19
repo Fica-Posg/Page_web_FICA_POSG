@@ -35,6 +35,8 @@ export const maestriasdb = [
         imgMain: maestria1Main,
         area: "Civil",
         description: "Ingeniería Civil",
+        mode:"presencial",
+
 
 
       },
@@ -53,6 +55,8 @@ export const maestriasdb = [
         titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Estructural, Sísmica y de Cimentaciones (2da cohorte)",
         description: "Ingenieria Civil",
         area: "Civil",
+        mode:"presencial",
+
       },
       {
         //lista
@@ -69,6 +73,8 @@ export const maestriasdb = [
         titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Vial y Pavimentos",
         description: "Ingenieria Civil",
         area: "Civil",   
+        mode:"presencial",
+
       },
       {
         //lista
@@ -85,18 +91,23 @@ export const maestriasdb = [
         imgMain: maestria4Main,
         area: "Sistemas",
         description: "Ingeniería en Sistemas",
+        mode:"presencial",
+
+        //Individual
 
       },
 
 
 
-      //Maestria en diferente estado (Main)
+      //Maestria en diferente estado (Main) Pd: no tienen Individual
       {
         //main filtrado
+        id:5,
         titleMain: "Maestría en Ingeniería Civil, mención en evaluación y rehabilitación de estructuras (FINALIZADA)",
         imgMain: rehabilitacion,
         area: "Civil", 
         description: "Ingenieria Civil",
+        mode:"presencial",
         url: '',
       },
       {
@@ -105,33 +116,34 @@ export const maestriasdb = [
         imgMain: sismica1,
         area: "Civil", 
         description: "Ingenieria Civil",
+        mode:"presencial",
         url: '',
       },
       {
         //main filtrado
         titleMain: "Maestría en Sistemas Integrados, con mención en Sostenibilidad (En Ejecución)",
         imgMain: sostenible,
-                //confirmar
-        area: "Sistemas",
-        description: "Ingeniería en Sistemas",
+        area: "Industrial",
+        description: "Ingenieria Industrial",
+        mode:"virtual",
         url: '',
       },
       {
         //main filtrado
         titleMain: "Maestría en Ecoeficiencia Industrial (En Ejecución)",
         imgMain: ecoeficiencia,
-                //confirmar
-        area: "Otros",
-        description: "Ingenieria Civil",
+        area: "Industrial",
+        description: "Ingenieria Industrial",
+        mode:"virtual",
         url: '',
       },
       {
         //main filtrado
         titleMain: "Maestría en Ingeniería Industrial, con mención en logística y cadena de suministros (En Ejecución)",
         imgMain: logistica,
-        //confirmar
-        area: "Otros",
+        area: "Industrial",
         description: "Ingenieria Industrial",
+        mode:"virtual",
         url: '',
       },
 

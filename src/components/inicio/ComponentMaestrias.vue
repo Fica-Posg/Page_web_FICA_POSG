@@ -16,7 +16,7 @@
               <p class="maestria-title">{{ maestria.titleMain }}</p>
               <p class="maestria-description">{{ maestria.description }}</p>
               <p class="maestria-mode">
-                <i class="pi pi-desktop"></i> Modalidad presencial
+                <i class="pi pi-desktop"></i> Modalidad {{maestria.mode}}
               </p>
               <button class="info-button">Más información</button>
             </div>
@@ -36,7 +36,7 @@ import { maestriasdb } from '@/data/maestrias';
 export default {
   data() {
     return {
-      buttons: ["Civil", "Sistemas", "Otros"],
+      buttons: ["Civil", "Sistemas", "Industrial","Otros"],
       currentArea: "Civil",
       maestrias: maestriasdb,
     };
