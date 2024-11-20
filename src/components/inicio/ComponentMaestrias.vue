@@ -18,7 +18,7 @@
               <p class="maestria-mode">
                 <i class="pi pi-desktop"></i> Modalidad {{maestria.mode}}
               </p>
-              <button class="info-button">Más información</button>
+              <button v-if="maestria.url!=''" class="info-button">Más información</button>
             </div>
           </router-link>
         </div>
