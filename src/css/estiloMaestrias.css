@@ -191,3 +191,10 @@ h2 {
     padding-bottom: 40px; 
   }
 }
+@-moz-document url-prefix() {
+  .curso-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+}

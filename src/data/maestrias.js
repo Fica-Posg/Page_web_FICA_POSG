@@ -1,17 +1,19 @@
 import maestria1 from '@/assets/maestrias/maestria1.png';
-import maestria1Main from "@/assets/maestrias2/maestria1.jpg";
 import maestria2 from '@/assets/maestrias/maestria2.png';
-import maestria2Main from "@/assets/maestrias2/maestria2.jpg";
 import maestria3 from '@/assets/maestrias/maestria3.png';
-import maestria3Main from "@/assets/maestrias2/maestria3.jpg";
 import maestria4 from '@/assets/maestrias/maestria4.png';
+
+
+import maestria1Main from "@/assets/maestrias2/maestria1.jpg";
+import maestria2Main from "@/assets/maestrias2/maestria2.jpg";
+import maestria3Main from "@/assets/maestrias2/maestria3.jpg";
 import maestria4Main from "@/assets/maestrias2/maestria4.jpg";
 
-import sismica1 from "@/assets/maestrias2/sismica1.png";
-import rehabilitacion from "@/assets/maestrias2/rehabilitacion.png";
-import sostenible from "@/assets/maestrias2/sostenible.png";
-import ecoeficiencia from "@/assets/maestrias2/ecoeficiencia.png";
-import logistica from "@/assets/maestrias2/logistica_sum.png";
+import sismica1Main from "@/assets/maestrias2/sismica1.png";
+import rehabilitacionMain from "@/assets/maestrias2/rehabilitacion.png";
+import sostenibleMain from "@/assets/maestrias2/sostenible.png";
+import ecoeficienciaMain from "@/assets/maestrias2/ecoeficiencia.png";
+import logisticaMain from "@/assets/maestrias2/logistica_sum.png";
 
 
 /*
@@ -104,7 +106,7 @@ export const maestriasdb = [
         //main filtrado
         id:5,
         titleMain: "Maestría en Ingeniería Civil, mención en evaluación y rehabilitación de estructuras (FINALIZADA)",
-        imgMain: rehabilitacion,
+        imgMain: rehabilitacionMain,
         area: "Civil", 
         description: "Ingenieria Civil",
         mode:"presencial",
@@ -113,7 +115,7 @@ export const maestriasdb = [
       {
         //main filtrado
         titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Estructural, Sísmica y de Cimentaciones (1ra cohorte) (FINALIZADA)",
-        imgMain: sismica1,
+        imgMain: sismica1Main,
         area: "Civil", 
         description: "Ingenieria Civil",
         mode:"presencial",
@@ -122,7 +124,7 @@ export const maestriasdb = [
       {
         //main filtrado
         titleMain: "Maestría en Sistemas Integrados, con mención en Sostenibilidad (En Ejecución)",
-        imgMain: sostenible,
+        imgMain: sostenibleMain,
         area: "Industrial",
         description: "Ingenieria Industrial",
         mode:"virtual",
@@ -131,7 +133,7 @@ export const maestriasdb = [
       {
         //main filtrado
         titleMain: "Maestría en Ecoeficiencia Industrial (En Ejecución)",
-        imgMain: ecoeficiencia,
+        imgMain: ecoeficienciaMain,
         area: "Industrial",
         description: "Ingenieria Industrial",
         mode:"virtual",
@@ -140,7 +142,7 @@ export const maestriasdb = [
       {
         //main filtrado
         titleMain: "Maestría en Ingeniería Industrial, con mención en logística y cadena de suministros (En Ejecución)",
-        imgMain: logistica,
+        imgMain: logisticaMain,
         area: "Industrial",
         description: "Ingenieria Industrial",
         mode:"virtual",
