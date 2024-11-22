@@ -48,7 +48,7 @@
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
             <p>Acceda al PDF para obtener más información.</p>
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EW8pAzgfNJpChkGxlKLs8D0BzBBTUgGEVJPv-thV6BC9cg?e=zh551G" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C3-Especialización_en_Análisis_no_Lineal_y_Diseño_por_Desempeño_Sísmico_de_Estructura.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -86,4 +86,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

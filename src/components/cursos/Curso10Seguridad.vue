@@ -52,7 +52,7 @@
 
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/ETUkd__AraNDj-oo8AK7c5EBv_ayU_q-1_jRCrw4ZT5xyg?e=WOQdvA" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C10-Indicadores_de_Seguridad_y_Seguridad_Ocupacional.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -90,4 +90,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

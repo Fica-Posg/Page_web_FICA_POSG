@@ -51,7 +51,7 @@
 
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EQYSdCIW5SVOj1s2E8hqkMMBne3jlIlklYIbvht7zRF1CQ?e=d2fAW5" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C8-Especialización_en_Ciberseguridad.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -89,4 +89,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

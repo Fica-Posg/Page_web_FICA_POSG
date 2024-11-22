@@ -57,7 +57,7 @@
       <AccordionTab header="Módulos de la Maestría">
         <p>Acceda al PDF para obtener más información.</p>
         <div class="contenido-curso-container">
-          <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EUBFkTJKP6ZClVM3Om59YJUBKPiyFINzkfChlBmOB1QAMw?e=5vwJEO"
+          <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m1-mención_en_Ingeniería_de_Transporte_y_Planificación_de_Tránsito.pdf"
             target="_blank">
             <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
           </a>

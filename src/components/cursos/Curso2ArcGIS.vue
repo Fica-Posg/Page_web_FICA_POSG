@@ -49,7 +49,7 @@
       <AccordionTab header="Contenido del Curso">
         <p>Acceda al PDF para obtener más información.</p>
         <div class="contenido-curso-container">
-          <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EVFhjfj8fm5OifwUZ0kVMjYBiwg7e1ipbibOfoC3-7WaSg?e=elkOiV" 
+          <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C2-Sistemas_de_Información_Geográfica_con_ArcGIS.pdf" 
           target="_blank">
             <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
           </a>
@@ -104,5 +104,5 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped>
+<style src="../../css/estiloCursos.css" scoped>
 </style>

@@ -53,7 +53,7 @@
 
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/ERcGS7AgZYBBvsoqcrN-tBcBAP1cgQbL9VbFvgYYjiPnAg?e=l8erz4" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C9-Especialización_en_Gestión_del_Cloud_Computing_en_la_Empresa.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -91,5 +91,5 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>
 v

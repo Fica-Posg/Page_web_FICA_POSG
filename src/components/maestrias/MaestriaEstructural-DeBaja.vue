@@ -60,7 +60,7 @@
       <AccordionTab header="Módulos de la Maestría">
         <p>Acceda al PDF para obtener más información.</p>
         <div class="contenido-curso-container">
-          <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EWe6clDnJFlFnbnaWGePCbYB76VTdNPPIME2tEgpNP4UCA?e=n5wDzK"
+          <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m2-mención_en_Ingeniería_Estructural,_Sísmica_y_de_Cimentaciones.pdf"
             target="_blank">
             <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
           </a>

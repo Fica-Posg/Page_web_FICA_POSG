@@ -49,7 +49,7 @@
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
             <p>Acceda al PDF para obtener más información.</p>
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EUj7LTDcsvNCspbZqEkk-H0BkHuaCpvmTLegvjn_PWa1rg?e=HBKSQo" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C4-Análisis_de_Funcionamiento_Hidráulico_de_Redes_de_Alcantarillado_con_SWMM.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -87,4 +87,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

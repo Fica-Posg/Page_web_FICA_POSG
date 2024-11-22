@@ -70,7 +70,7 @@
       <AccordionTab header="Módulos de la Maestría">
         <p>Acceda al PDF para obtener más información.</p>
         <div class="contenido-curso-container">
-          <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/Ebk033nAcZVElFFXdvrUQMgBztLWGMm3yRySXbHx0hMW1A?e=PqdPQp"
+          <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m4-mención_en_Inteligencia_de_Negocios_.pdf"
             target="_blank">
             <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
           </a>

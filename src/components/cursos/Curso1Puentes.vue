@@ -53,7 +53,7 @@
       <AccordionTab header="Contenido del Curso">
         <div class="contenido-curso-container">
           <p>Acceda al PDF para obtener más información.</p>
-          <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EbgwrWGFBYVIig64sthrNIQBeOBoJDrpophyBB30unudNg?e=vJWbZM" 
+          <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C1-Diseño_de_Puentes_de_Acero_de_Alma_Llena_Aplicando_la_Norma_AA_SHTO_LRFD_2017_y_CSI_BRIDGE.pdf" 
              target="_blank">
             <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
           </a>
@@ -93,4 +93,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

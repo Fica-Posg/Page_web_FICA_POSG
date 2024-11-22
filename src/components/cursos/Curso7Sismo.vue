@@ -47,7 +47,7 @@
           <p>Acceda al PDF para obtener más información.</p>
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/Eevlfffm2Q1AlkqciupJESgB0yyJikGUVYMJZ4UQclJV-w?e=Jzbj4u" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C7-Especializado_en_Ingeniería_Sismo-Geotécnica_y_Interacción_Suelo-Estructura.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -85,4 +85,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

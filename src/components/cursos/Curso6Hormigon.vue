@@ -46,7 +46,7 @@
         <div>
           <p>Acceda al PDF para obtener más información.</p>
           <div class="contenido-curso-container">
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EQzUMuSQ8xZKqHElv4L6nOABZhC--VsHZjNfVpvWhyphjQ?e=XwCwJC" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C6-Diseño_de_Canales_y_Alcantarillas_de_Hormigón_Armado_con_la_Norma_AASHTO_LRFD_2017_y_SAP_2000.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -84,4 +84,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>

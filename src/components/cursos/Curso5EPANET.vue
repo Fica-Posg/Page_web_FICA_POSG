@@ -47,7 +47,7 @@
           <!-- Botón de Más Información -->
           <div class="contenido-curso-container">
             <p>Acceda al PDF para obtener más información.</p>
-            <a href="https://uceedu-my.sharepoint.com/:b:/g/personal/ymflorez_uce_edu_ec/EZmiv00VzOJBk7ZO6OLCMMoBULC8ymKiQ5REH0S6a1BJPQ?e=B3ekAk" 
+            <a href="https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Cursos/C5-Análisis_de_Funcionamiento_Hidráulico_de_Redes_de_Distribución_con_EPANET.pdf" 
                target="_blank">
               <img src="@/assets/pdf.png" alt="Más Información PDF" class="pdf-button" />
             </a>
@@ -85,4 +85,4 @@ export default {
 };
 </script>
 
-<style src="../../css/cursos_Diseño.css" scoped></style>
+<style src="../../css/estiloCursos.css" scoped></style>
