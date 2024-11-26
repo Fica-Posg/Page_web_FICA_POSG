@@ -39,7 +39,7 @@ export const maestriasdb = [
         description: "Ingeniería Civil",
         mode:"presencial",
 
-
+        //Individual
 
       },
       {
@@ -59,6 +59,8 @@ export const maestriasdb = [
         area: "Civil",
         mode:"presencial",
 
+        //Individual
+
       },
       {
         //lista
@@ -76,6 +78,8 @@ export const maestriasdb = [
         description: "Ingenieria Civil",
         area: "Civil",   
         mode:"presencial",
+
+        //Individual
 
       },
       {
@@ -108,7 +112,7 @@ export const maestriasdb = [
         titleMain: "Maestría en Ingeniería Civil, mención en evaluación y rehabilitación de estructuras (FINALIZADA)",
         imgMain: rehabilitacionMain,
         area: "Civil", 
-        description: "Ingenieria Civil",
+        description: "Ingeniería Civil",
         mode:"presencial",
         url: '',
       },
@@ -117,7 +121,7 @@ export const maestriasdb = [
         titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Estructural, Sísmica y de Cimentaciones (1ra cohorte) (FINALIZADA)",
         imgMain: sismica1Main,
         area: "Civil", 
-        description: "Ingenieria Civil",
+        description: "Ingeniería Civil",
         mode:"presencial",
         url: '',
       },
@@ -126,7 +130,7 @@ export const maestriasdb = [
         titleMain: "Maestría en Sistemas Integrados, con mención en Sostenibilidad (En Ejecución)",
         imgMain: sostenibleMain,
         area: "Industrial",
-        description: "Ingenieria Industrial",
+        description: "Ingeniería Industrial",
         mode:"virtual",
         url: '',
       },
@@ -135,7 +139,7 @@ export const maestriasdb = [
         titleMain: "Maestría en Ecoeficiencia Industrial (En Ejecución)",
         imgMain: ecoeficienciaMain,
         area: "Industrial",
-        description: "Ingenieria Industrial",
+        description: "Ingeniería Industrial",
         mode:"virtual",
         url: '',
       },
@@ -144,7 +148,7 @@ export const maestriasdb = [
         titleMain: "Maestría en Ingeniería Industrial, con mención en logística y cadena de suministros (En Ejecución)",
         imgMain: logisticaMain,
         area: "Industrial",
-        description: "Ingenieria Industrial",
+        description: "Ingeniería Industrial",
         mode:"virtual",
         url: '',
       },
