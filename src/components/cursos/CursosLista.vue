@@ -75,7 +75,7 @@
             <label for="area3">Ingeniería Industrial</label>
           </div>
           <div>
-            <input type="radio" id="area4" name="area" value="Computacion" v-model="filters.area">
+            <input type="radio" id="area4" name="area" value="Computación" v-model="filters.area">
             <label for="area4">Ingeniería Computación</label>
           </div>
           <div>
@@ -86,7 +86,15 @@
       </div>
     </div>
     <div class="items-list">
-      <div class="item-card" v-for="curso in filteredCursos" :key="curso.id">
+      <div v-if="filteredCursos.length === 0" class="no-results">
+        <!--
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icono-advertencia">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>-->
+        <i class="pi pi-exclamation-circle icono-advertencia" style="font-size: 5rem;"></i>
+        <p>No se encontraron cursos que coincidan con los filtros seleccionados.</p>
+      </div>
+      <div v-else class="item-card" v-for="curso in filteredCursos" :key="curso.id">
         <router-link :to="curso.url" class="item-link" @click="scrollToTop">
           <img :src="curso.image" alt="Imagen del curso" class="item-image">
           <h3>{{ curso.title }}</h3>
@@ -101,6 +109,7 @@
 
 <script>
 import { cursosdb } from '@/data/cursos';
+import CursoService from '@/service/cursos/CursoService';
 
 export default {
   name: 'CursosPage',
@@ -117,35 +126,19 @@ export default {
   },
   computed: {
     filteredCursos() {
-      return this.cursos.filter(curso => {
-        const matchesDuration = this.filters.duration ? this.checkDuration(curso.duration, this.filters.duration) : true;
-        const matchesCost = this.filters.cost ? this.checkPrice(curso.price, this.filters.cost) : true;
-        const matchesMode = this.filters.mode ? curso.mode === this.filters.mode : true;
-        const matchesArea = this.filters.area ? curso.area === this.filters.area : true;
-
-        return matchesDuration && matchesCost && matchesMode && matchesArea;
-      });
+      const filtered = CursoService.filterCursos(this.cursos, this.filters);
+      if (filtered.length === 0) {
+        this.scrollToTop();
+      }
+      return filtered;
     }
   },
   methods: {
-    checkDuration(duration, filter) {
-      const numericDuration = parseFloat(duration.replace(' horas', '').replace(',', ''));
-      if (filter === 'Menos de 50 horas') return numericDuration < 50;
-      if (filter === 'Entre 50 y 80 horas') return numericDuration >= 50 && numericDuration <= 80;
-      if (filter === 'Más de 80 horas') return numericDuration > 80;
-      return true;
-    },
-    checkPrice(price, filter) {
-      const numericPrice = parseFloat(price.replace('$', '').replace(',', ''));
-      if (filter === 'Menos de $90') return numericPrice < 90;
-      if (filter === 'Entre $90 y $100') return numericPrice >= 90 && numericPrice <= 100;
-      if (filter === 'Más de $100') return numericPrice > 100;
-      return true;
-    },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 };
 </script>
+
 <style src="@/css/estiloLista.css" scoped></style>

@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
+import { cursosdb } from '@/data/cursos';
 
 const routes = [
   {
@@ -74,7 +75,7 @@ const routes = [
     component: () => import("../page/pago/FormasPagoCursosPage.vue"),
   },
   /*Info  (por corregir)*/
-  {
+  /*{
     path: "/curso-puentes",
     component: () => import("../page/cursos/Curso1PuentesPage.vue"),
   },
@@ -121,7 +122,7 @@ const routes = [
   {
     path: "/curso-arcgis-avanzado",
     component: () => import("../page/cursos/Curso12ArcGISAvanzadoPage.vue"),
-  },
+  },*/
 
   /* Rutas a adicionales */
   {
@@ -131,6 +132,15 @@ const routes = [
   
 
 ];
+
+// Añadir rutas dinámicas para los cursos
+cursosdb.forEach(curso => {
+  routes.push({
+    path: curso.url,
+    component: () => import("../page/cursos/CursoGenericoPage.vue"),
+    props: { curso }
+  });
+});
 
 const router = createRouter({ history: createWebHashHistory(), routes });
 export default router;
