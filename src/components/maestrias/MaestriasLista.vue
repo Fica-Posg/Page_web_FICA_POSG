@@ -74,7 +74,11 @@
       </div>
     </div>
     <div class="items-list">
-      <div class="item-card" v-for="maestria in filteredMaestrias" :key="maestria.id" >
+      <div v-if="filteredMaestrias.length === 0" class="no-results">
+        <i class="pi pi-exclamation-circle icono-advertencia" style="font-size: 5rem;"></i>
+        <p>No se encontraron maestrías que coincidan con los filtros seleccionados.</p>
+      </div>
+      <div v-else class="item-card" v-for="maestria in filteredMaestrias" :key="maestria.id">
         <router-link :to="maestria.url" class="item-link" @click="scrollToTop">
           <img :src="maestria.image" alt="Imagen de la maestría" class="item-image">
           <h3>{{ maestria.title }}</h3>
@@ -89,6 +93,7 @@
 
 <script>
 import { maestriasdb } from '@/data/maestrias';
+import MaestriasService from '@/service/maestrias/MaestriasService';
 
 export default {
   name: 'MaestriasPage',
@@ -105,29 +110,19 @@ export default {
   },
   computed: {
     filteredMaestrias() {
-      return this.maestrias.filter(maestria => {
-        const hasTitle = maestria.title && maestria.title.trim() !== '';
-        const matchesDuration = this.filters.duration ? maestria.duration === this.filters.duration : true;
-        const matchesCost = this.filters.cost ? this.checkPrice(maestria.price, this.filters.cost) : true;
-        const matchesMode = this.filters.mode ? maestria.mode === this.filters.mode : true;
-        const matchesArea = this.filters.area ? maestria.title.includes(this.filters.area) : true;
-
-        return hasTitle && matchesDuration && matchesCost && matchesMode && matchesArea;
-      });
+      const filtered = MaestriasService.filterMaestrias(this.maestrias, this.filters);
+      if (filtered.length === 0) {
+        this.scrollToTop();
+      }
+      return filtered;
     }
   },
   methods: {
-    checkPrice(price, filter) {
-      const numericPrice = parseFloat(price.replace('$', '').replace(',', ''));
-      if (filter === 'Menos de $4000') return numericPrice < 4000;
-      if (filter === 'Entre $4000 y $5000') return numericPrice >= 4000 && numericPrice <= 5000;
-      if (filter === 'Más de $5000') return numericPrice > 5000;
-      return true;
-    },
     scrollToTop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 };
 </script>
+
 <style src="@/css/estiloLista.css" scoped></style>
