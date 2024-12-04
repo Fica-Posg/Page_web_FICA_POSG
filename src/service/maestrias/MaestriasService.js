@@ -1,13 +1,16 @@
-// FILE: MaestriasService.js
-
 export default {
   filterMaestrias(maestrias, filters) {
     return maestrias.filter(maestria => {
-      const hasTitle = maestria.title && maestria.title.trim() !== '';
+      // Excluir maestrías que no tienen la propiedad 'title'
+      if (!maestria.title) {
+        return false;
+      }
+
+      const hasTitle = (maestria.title && maestria.title.trim() !== '') || (maestria.titleMain && maestria.titleMain.trim() !== '');
       const matchesDuration = filters.duration ? maestria.duration === filters.duration : true;
       const matchesCost = filters.cost ? this.checkPrice(maestria.price, filters.cost) : true;
       const matchesMode = filters.mode ? maestria.mode === filters.mode : true;
-      const matchesArea = filters.area ? maestria.title.includes(filters.area) : true;
+      const matchesArea = filters.area ? (maestria.title && maestria.title.includes(filters.area)) || (maestria.titleMain && maestria.titleMain.includes(filters.area)) : true;
 
       return hasTitle && matchesDuration && matchesCost && matchesMode && matchesArea;
     });

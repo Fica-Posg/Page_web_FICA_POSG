@@ -27,12 +27,13 @@ export const maestriasdb = [
     titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería de Transporte y Planificación de Tránsito",
     description: "Ingeniería Civil",
     area: "Civil",
-    mode: "presencial",
+    inscription: "$80",
+    objectives:["El programa académico propuesto se enfoca en el estudio de la ingeniería de transporte y planificación de tránsito debido a que se tiene como objeto fundamental formar profesionales en estas ramas de la ingeniería civil, en base a los últimos avances tecnológicos y científicos, con el fin de transformar y repotenciar la administración de los sistemas de transporte, de tal forma que se contribuya con el desarrollo económico y social del país."],
     requirements: [
-      "Título de tercer nivel en Ingeniería Civil registrado en la SENESCYT.",
-      "Si el título es extranjero, debe estar apostillado o legalizado.",
-      "Entrevista con el coordinador del programa.",
-      "Aprobar examen de admisión."
+      "- Título de tercer nivel en Ingeniería Civil registrado en la SENESCYT.",
+      "- Si el título es extranjero, debe estar apostillado o legalizado.",
+      "- Entrevista con el coordinador del programa.",
+      "- Aprobar examen de admisión."
     ],
     schedule: [
       "Jueves y Viernes 18h00 a 21h00.",
@@ -40,7 +41,8 @@ export const maestriasdb = [
     ],
     coordinator: "Ing. Jorge Crespo, MSc.",
     pdfLink: "https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m1-mención_en_Ingeniería_de_Transporte_y_Planificación_de_Tránsito.pdf",
-    formLink: "https://forms.gle/WqFc9WFKZBoZqSDu9"
+    formLink: "https://forms.gle/WqFc9WFKZBoZqSDu9",
+    orientation:"Ingeniería Civil"
   },
   {
     id: 2,
@@ -54,13 +56,14 @@ export const maestriasdb = [
     titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Estructural, Sísmica y de Cimentaciones (2da cohorte)",
     description: "Ingenieria Civil",
     area: "Civil",
-    mode: "presencial",
+    inscription: "$80",
+    objectives:["El programa académico propuesto se enfoca en el estudio de la ingeniería estructural, sísmica y de cimentaciones debido a que se tiene como objeto fundamental formar profesionales en estas ramas de la ingeniería civil, en base a los últimos avances tecnológicos y científicos, con el fin de transformar y repotenciar del sistema de infraestructura nacional, de tal forma que se contribuya con el progreso y el desarrollo del país."],
     requirements: [
-      "Título de tercer nivel registrado en la SENESCYT.",
-      "Si el título es extranjero, debe estar legalizado por vía consular.",
-      "Entrevista con el coordinador del programa.",
-      "Aprobar examen de admisión.",
-      "Suficiencia en inglés (nivel A2)."
+      "- Título de tercer nivel registrado en la SENESCYT.",
+      "- Si el título es extranjero, debe estar legalizado por vía consular.",
+      "- Entrevista con el coordinador del programa.",
+      "- Aprobar examen de admisión.",
+      "- Suficiencia en inglés (nivel A2)."
     ],
     schedule: [
       "Jueves y Viernes 18h00 a 21h00.",
@@ -68,7 +71,8 @@ export const maestriasdb = [
     ],
     coordinator: "Ing. Alejandro Machado, MSc.",
     pdfLink: "https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m2-mención_en_Ingeniería_Estructural,_Sísmica_y_de_Cimentaciones.pdf",
-    formLink: "https://forms.gle/Pq3ZEnJHKyEpbvfk7"
+    formLink: "https://forms.gle/Pq3ZEnJHKyEpbvfk7",
+    orientation:"Ingeniería Civil"
   },
     {
     id: 3,
@@ -82,7 +86,8 @@ export const maestriasdb = [
     titleMain: "Maestría en Ingeniería Civil, mención en Ingeniería Vial y Pavimentos",
     description: "Ingenieria Civil",
     area: "Civil",
-    mode: "presencial",
+    inscription: "$80",
+    objectives: ["El programa académico propuesto se enfoca en el estudio de la ingeniería vial y de pavimentos debido a que se tiene como objeto fundamental formar profesionales en estas ramas de la ingeniería civil, en base a los últimos avances tecnológicos y científicos, con el fin de transformar y repotenciar del sistema vial nacional, de tal forma que se contribuya con el progreso y el desarrollo del país."],
     requirements: [
       "Título de tercer nivel en Ingeniería Civil, registrado en la SENESCYT.",
       "Si el título es extranjero, debe estar apostillado o legalizado por vía consular.",
@@ -96,7 +101,8 @@ export const maestriasdb = [
     ],
     coordinator: "Ing. Byron Heredia, MSc.",
     pdfLink: "https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m3-mención_en_Ingeniería_Vial_y_Pavimentos.pdf",
-    formLink: "https://forms.gle/isTmSvFy2oyjDedG9"
+    formLink: "https://forms.gle/isTmSvFy2oyjDedG9",
+    orientation:"Ingeniería Civil"
   },
    {
     id: 4,
@@ -110,12 +116,17 @@ export const maestriasdb = [
     titleMain: "Maestría en Sistemas de Información, mención en Inteligencia de Negocios (2da cohorte)",
     description: "Ingeniería en Sistemas",
     area: "Sistemas",
-    mode: "presencial",
+    inscription: "$80",
+    objectives:[
+      "Dada la realidad actual de las empresas, día a día con el aumento significativo de datos, provoca que el manejo de información en muchos casos se encuentre saturada en los sistemas informáticos transaccionales o los conocidos ERP. Por lo cual, de acuerdo con la lógica de negocio y necesidad de una determinada empresa, se requiere gestores de bases de datos y herramientas de inteligencia de negocios para gestionar de mejor manera grandes cantidades de datos.",
+      "A partir de ello, el objeto de estudio es convertir en información la data captada mediante el procesamiento y gestión de datos, metodologías de análisis de información, modelos predictivos, programación, aprendizaje estadístico, reconocimientos de patrones y minería de datos, para la generación de conocimiento y presentación del mismo mediante herramientas de visualización que, de forma amigable, sencilla, útil y rápida, contribuyan a la toma de decisiones y desarrollo de estrategias empresariales en las organizaciones.",
+      "Esto indica que los procesos ETL y la inteligencia de negocios son una herramienta hacia el apalancamiento de los nuevos desafíos que asumen otras disciplinas en el contexto actual del desarrollo tecnológico."
+    ],
     requirements: [
-      "Título de tercer nivel registrado en la SENESCYT.",
-      "Si el título es extranjero, debe estar legalizado por vía consular.",
-      "Entrevista con el coordinador del programa.",
-      "Aprobar examen de admisión."
+      "- Título de tercer nivel registrado en la SENESCYT.",
+      "- Si el título es extranjero, debe estar legalizado por vía consular.",
+      "- Entrevista con el coordinador del programa.",
+      "- Aprobar examen de admisión."
     ],
     schedule: [
       "Jueves y Viernes 18h00 a 21h00.",
@@ -123,7 +134,8 @@ export const maestriasdb = [
     ],
     coordinator: "Ing. Ramiro Pilaluisa, PhD.",
     pdfLink: "https://repositorio.uce.edu.ec/archivos/FING/Posgrado/Maestrias/m4-mención_en_Inteligencia_de_Negocios_.pdf",
-    formLink: "https://forms.gle/5YJabhmvATVaxPqZ8"
+    formLink: "https://forms.gle/5YJabhmvATVaxPqZ8",
+    orientation:"Ingeniería Informática"
   },
   {
     id: 5,

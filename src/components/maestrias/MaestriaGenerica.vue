@@ -4,10 +4,12 @@
         <img :src="maestria.imgMain" :alt="maestria.titleMain" class="curso-image" />
         <div class="title-section">
           <h1>{{ maestria.titleMain }}</h1>
-          <div class="description-section">
-            <p><strong>Objetivos:</strong></p>
-            <p>{{ maestria.objectives }}</p>
-          </div>
+            <div class="description-section">
+              <p><strong>Objetivos:</strong></p>
+              <ul>
+                <li v-for="(objective, index) in maestria.objectives" :key="index">{{ objective }}</li>
+              </ul>
+            </div>
           <div class="info-box">
             <div class="info-item">
               <p><strong>Modalidad:</strong> {{ maestria.mode }}</p>
