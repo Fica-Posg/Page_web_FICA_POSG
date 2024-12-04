@@ -31,7 +31,7 @@ import { cursosdb } from '@/data/cursos';
 export default {
   data() {
     return {
-      buttons: ["Civil", "Computacion", "Industrial", "Informática", "Otros"],
+      buttons: ["Civil", "Computación", "Industrial", "Informática", "Otros"],
       currentArea: "Civil", // Por defecto mostrar el área "Civil"
       cursos: cursosdb,
     };

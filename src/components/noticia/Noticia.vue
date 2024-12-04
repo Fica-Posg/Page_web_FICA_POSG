@@ -3,7 +3,7 @@
     <div class="noticia" v-if="singleNews">
       <div class="noticia-content">
         <h1 class="noticia-title">{{ singleNews.title }}</h1>
-        <p class="noticia-content">{{ singleNews.content }}</p>
+        <div class="noticia-content" v-html="singleNews.content"></div>
         <span class="noticia-date">{{ singleNews.date }}</span>
       </div>
       <div class="noticia-video" v-if="singleNews.videoUrl">
@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { news } from '@/data/noticias';
+import { noticiasMaestrias as news } from '@/data/noticiasMaestrias.js';
 import SocialVideo from '@/components/noticia/Video.vue';
 
 export default {
