@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { noticiasMaestrias as news } from '@/data/noticiasMaestrias.js';
+import { news } from '@/data/noticias.js';
 import SocialVideo from '@/components/noticia/Video.vue';
 
 export default {
@@ -107,8 +107,8 @@ export default {
 }
 
 .noticia-image {
-  max-height: 400px;
   max-width: 50%;
+  max-height: max-content;
   object-fit: cover;
 }
 

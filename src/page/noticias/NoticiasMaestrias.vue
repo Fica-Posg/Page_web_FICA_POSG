@@ -5,59 +5,29 @@
       <h1>Noticias</h1>
     </div>
     <div class="noticias">
-      <Noticia v-for="noticia in sortedNoticias" :key="noticia.id" :newsId="noticia.id" />
+      <!-- agregar noticias -->
+      <Noticia :newsId="'procTitu'" />
+      
+      <Noticia :newsId="'mcivil1'" />
+      <Noticia :newsId="'mcivil2'" />
+      <Noticia :newsId="'mcivil3'" />
     </div>
     <Footer />
   </div>
 </template>
 
 <script>
-import NavBar from "@/components/navBar/NavBarMaestrias.vue";
+import NavBar from "@/components/navBar/NavBarCursos.vue";
 import Footer from "@/components/inicio/Footer.vue";
 import Noticia from "@/components/noticia/Noticia.vue";
-import { noticiasMaestrias } from "@/data/noticiasMaestrias.js"; // Asegúrate de que esta ruta sea correcta
 
 export default {
-  components: {
+    components: {
     NavBar,
     Footer,
     Noticia,
   },
-  data() {
-    return {
-      noticias: noticiasMaestrias
-    };
-  },
-  computed: {
-    sortedNoticias() {
-      return this.noticias.slice().sort((a, b) => {
-        const dateA = new Date(a.date);
-        const dateB = new Date(b.date);
-        if (dateA > dateB) return -1;
-        if (dateA < dateB) return 1;
-        // If dates are equal, maintain the order in the JSON
-        return 0;
-      });
-    }
-  }
-};
+}
 </script>
 
-<style scoped>
-.header {
-  background: linear-gradient(to right, #1e446b, #00aaff);
-  padding: 0.5%;
-  text-align: center;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-}
-h1 {
-  color: white;
-  font-size: 2.5rem;
-  margin: 1% 0% 1% 0%;
-  text-align: center;
-}
-.noticias {
-  margin-top: 2%;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
-}
-</style>
+<style src="@/css/estiloNoticia.css" scoped></style>
