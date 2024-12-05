@@ -35,23 +35,6 @@ const routes = [
     path: "/maestrias/formas-pago",
     component: () => import("../page/pago/FormasPagoMaestriaPage.vue"),
   },
-  /*Info  (por corregir)
-  {
-    path: "/maestria-transporte",
-    component: () => import("../page/maestrias/MaestriaTransportePage.vue"),
-  },
-  {
-    path: "/maestria-estructural",
-    component: () => import("../page/maestrias/MaestriaEstructuralPage.vue"),
-  },
-  {
-    path: "/maestria-vial",
-    component: () => import("../page/maestrias/MaestriaVialPage.vue"),
-  },
-  {
-    path: "/maestria-sistemas",
-    component: () => import("../page/maestrias/MaestriaSistemasPage.vue"),
-  },*/
 
   /* Rutas a cursos ---------*/
   {
@@ -76,6 +59,10 @@ const routes = [
     component: () => import("../page/pago/FormasPagoCursosPage.vue"),
   },
   /* Rutas a adicionales */
+  {
+    path: '',
+    component: () => import("../page/NotFoundPage.vue"),
+  },
   {
     path: '/:pathMatch(.*)*',
     component: () => import("../page/NotFoundPage.vue"),

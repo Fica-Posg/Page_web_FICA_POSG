@@ -1,7 +1,7 @@
 <template>
   <div class="curso-page">
     <div class="header">
-      <img :src="curso.imgMain" :alt="curso.titleMain" class="curso-image" />
+      <img :src="curso.image" :alt="curso.titleMain" class="curso-image" />
       <div class="title-section">
         <h1>{{ curso.titleMain }}</h1>
         <div class="description-section">

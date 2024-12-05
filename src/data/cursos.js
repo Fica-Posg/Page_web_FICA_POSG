@@ -60,7 +60,7 @@ export const cursosdb = [
         duration: '40 horas / 4 semanas',
         mode: 'Presencial',
         price: '$80',
-        area: 'Civil',
+        area: 'Computación',
         url: '/curso-arcgis',
 
         //Main

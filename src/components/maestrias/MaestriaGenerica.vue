@@ -1,7 +1,7 @@
 <template>
     <div class="maestria-page">
       <div class="header">
-        <img :src="maestria.imgMain" :alt="maestria.titleMain" class="curso-image" />
+        <img :src="maestria.image" :alt="maestria.titleMain" class="curso-image" />
         <div class="title-section">
           <h1>{{ maestria.titleMain }}</h1>
             <div class="description-section">
